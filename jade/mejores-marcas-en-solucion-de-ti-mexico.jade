@@ -1,0 +1,13 @@
+extends templates/home
+
+block title
+  title Mejores marcas en solución de TI - Iscor
+block description
+  meta(name="description" content="Forcepoint en México, Solarwinds en México, Fortinet en México, CheckPoint en México, Cisco en México, Airwatch en México, Juniper Networks en México, Trendmicro en México, Vmware en México, Microsoft en México.") 
+block menu-productos
+  li: a.active(href="mejores-marcas-en-solucion-de-ti-mexico.html") Productos
+block content
+  header#productos__header
+    include includes/productos__header
+  section#productos__grid
+    include includes/productos__grid

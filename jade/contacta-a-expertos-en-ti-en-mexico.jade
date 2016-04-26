@@ -1,0 +1,13 @@
+extends templates/home
+
+block title
+  title Conatca con expertos en TI - Iscor
+block description
+  meta(name="description" content="Contacta con expertos en TI, Infraestructura TI, Ingeniería de Redes en México, Monitoreo y Gestión de Redes.") 
+block menu-contacto
+  li: a.active(href="contacta-a-expertos-en-ti-en-mexico.html") Contacto
+block content
+  header#contacto__header
+    include includes/contacto__header
+  section#contacto__form-and-map
+    include includes/contacto__form-and-map  

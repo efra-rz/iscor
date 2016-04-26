@@ -1,0 +1,15 @@
+extends templates/home
+
+block title
+  title Areas de acción - Iscor
+block description
+  meta(name="description" content="Análisis y Monitoreo de redes en México, Análisis y monitoreo de redes, Seguridad Perimetral NGFW, Análisis de tráfico redes, Monitoreo de tráfico de Red, Soporte Técnico de Redes, Soporte Técnico de Redes en México .") 
+block menu-servicios
+  li: a.active(href="areas-de-accion-en-ti.html") Áreas de Acción
+block content
+  section#areas-accion__banner
+    include includes/areas-accion__banner
+  header(role="main")#areas-accion__header
+    include includes/areas-accion__header
+  section#areas-accion__servicios
+    include includes/areas-accion__servicios

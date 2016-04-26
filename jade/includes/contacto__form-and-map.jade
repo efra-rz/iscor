@@ -1,18 +1,42 @@
 .contacto__form-and-map.mt5.mb5
   .ed-container
-    .ed-item.tablet-50
-      form.contacto__forma(action="sendbymail_iscor.php" method="post")
-        h3.fnm-title ¡Contáctanos!
+    .ed-item.tablet-80.center
+      form.contacto__forma(action='sendbymail_iscor.php', method='post')
+        h3.fnm-title &iexcl;Cont&aacute;ctanos!
+        |                     
         ul.fnm-list
           li Nombre
-          li: input(type="text" name="nombre" placeholder="Ingrese su Nombre" required)
+          |                       
+          li
+            input(name='nombre', placeholder='Ingrese su Nombre', required='required', type='text')
+          |                       
           li Correo
-          li: input(type="text" name="correo" placeholder="Ingrese su E-mail" required)
+          |                       
+          li
+            input(name='correo', placeholder='Ingrese su E-mail', required='required', type='text')
+          |                       
           li Mensaje
-          li:  textarea(rows="6"  name="mensaje" placeholder="Porque nos interesa su opinión, escriba su mensaje." required)
-          li: input.fnm-send(type="submit" value="Enviar" id="boton")
+          |                       
+          li
+            textarea(rows='6', name='mensaje', placeholder='Porque nos interesa su opinión, escriba su mensaje.', required='required')
+          |                       
+          li
+            input#boton.fnm-send(value='Enviar', type='submit')
+    |       &#x9;&#x9;&#x9;
     .ed-item.tablet-50
-      h3.fnm-title Oficina Monterrey:
+      h3.fnm-title
+        | Oficina Monterrey:
         .ed-video
-          iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.2423697898944!2d-100.2630970678966!3d25.695362539976088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662954cbda83e97%3A0x8640d9e274a1b032!2sIscor+Soluciones%2C+S.A.+De+C.V.!5e0!3m2!1ses-419!2smx!4v1454534669222" width="300" height="200" frameborder="0" style="border:0" allowfullscreen)
-      p.direccion__visitanos  Plaza Vía, Ave Constituyentes de N.L. 1201-22, C.P.67130 Col. Linda Vista Nuevo León, México
+          iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.696029044566!2d-100.33514768562216!3d25.6482122195497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662954cbda83e97%3A0x8640d9e274a1b032!2sIscor+Soluciones!5e0!3m2!1ses-419!2smx!4v1459460857605', style='border:0', allowfullscreen='', frameborder='0', height='200', width='300')
+      |                   
+      p.direccion__visitanos
+        | Batall&oacute;n de San Patricio #111, Torre ING Piso 26, Valle Oriente, San Pedro, Nuevo Le&oacute;n, C.P. 66269
+    |       &#x9;&#x9;&#x9;
+    .ed-item.tablet-50
+      h3.fnm-title
+        | Oficina Cd de Mexico:
+        .ed-video
+          iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.6474199684994!2d-99.16750718573911!3d19.42763414587511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35b6675979%3A0x70c7b9084d15b3fe!2sPaseo+de+la+Reforma+296%2C+Ju%C3%A1rez%2C+06600+Col+Ju%C3%A1rez%2C+D.F.!5e0!3m2!1ses-419!2smx!4v1459460545367', style='border:0', allowfullscreen='', frameborder='0', height='200', width='300')
+      |                   
+      p.direccion__visitanos
+        | Av. Paseo de la Reforma #296, Torre Reforma Latino Piso 14, Col. Ju&aacute;rez, Cuauht&eacute;moc, Cd de M&eacute;xico, C.P. 06600
