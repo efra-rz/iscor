@@ -1,0 +1,67 @@
+.topbar{
+  background-color: $sec-color;
+  font-family: "open sans";
+  font-size: 20px;
+  text-align: center;
+  color:$first-colorD;
+  font-weight: 400;
+  padding-top: 20px;
+    @include desde(tablet){
+      min-height: 60px;
+      padding-top: 10px;
+      font-size: 1em;
+      }
+    @include desde(web){
+      a{
+        font-size: .85em;
+        color: $white;
+        }
+      min-height: 45px;
+      font-weight: $light;
+      padding-top: .8em;
+      img {
+        margin-right: 10px;
+        height:20px;
+        }
+      }
+    .tel a, .mail a{
+      color:lighten($first-colorD, 75);
+      @include desde(web){
+        display: inline;
+        }
+      }
+    &__menu{
+      list-style-type: none;
+      padding:0;
+      @include desde(tablet){
+        margin:5px 0;
+        }
+      @include desde(web){
+        margin:0;
+        }
+        &--item{
+          display: inline-block;
+          margin:0 5px;
+          @include desde(tablet){
+            margin: 0 2px;
+            }
+          }
+      }
+
+    &__link--social{
+      font-family: mh;
+      color:$white;
+      font-size: 27px;
+      background-color: $first-colorD;
+      padding:10px;
+      border-radius: 50%;
+      @include desde(tablet){
+        font-size: 20px
+        }
+      @include desde(web){
+        line-height: 0;
+        font-size: 16px;
+        padding:8px;
+        }
+      }
+  }

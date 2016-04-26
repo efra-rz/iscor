@@ -1,0 +1,127 @@
+/*Generales*/
+.boton__soporte{
+  background-color: $first-color;
+  margin-top: 2em;
+  line-height: 3em;
+  padding: 0 1.5em;
+  color:$white;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 1.5em;
+  font-weight: bold;
+  border: 1px solid rgba(#fff, .3);
+  font-size: 1.2em;
+  &:hover{
+    background-color: darken($first-color,9);
+    }
+  &:active{
+    transform: scale(.95);
+    }
+  }
+.galeria{
+  @include grid(box, 2);
+  @include from(tablet){
+    @include grid(box, 3);
+    }
+  }
+.md-none{
+    @include from(360px){
+      display:none;
+    }
+    @include from(web){
+      display:flex;
+    }
+  }
+/*Margin-top 5em*/
+.mt5{
+  margin-top: 5em;
+  }
+.mt3{
+  margin-top: 1.5em;
+}
+.mb5{
+  margin-bottom: 5em;
+  }
+
+/*Separador*/
+.separador{
+  margin:5em 0 0;
+  border-top: 1px dashed $sec-color;
+  }
+
+/*Seccion de Soluciones*/
+.home__soluciones{
+  background-color: $back-grey;
+  h2{
+    text-align: center;
+    color:$first-color;
+    }
+  p{
+    color:$first-color;
+    text-align: center;
+    font-weight: $light;
+    font-size: 1.7em;
+    margin-bottom: .5em;
+    }
+  }
+
+/*Forma de Contacto*/
+.home__form-and-map{
+  background-color: $back-grey;
+  padding:5em 0;
+  }
+.fnm-title{
+  color:$first-color;
+  }
+.fnm-list{
+  @include from(web){
+    margin:1em;
+    }
+  list-style-type: none;
+  padding-left: 0;
+  li{
+    font-weight: $light;
+    font-size: 1.3em;
+    color:$first-colorD;
+    input {
+      width:100%;
+      height: 2em;
+      padding-left: .5em;
+      @include from(tablet){
+        width:80%;
+        }
+      }
+    textarea{
+      width:100%;
+      @include from(tablet){
+        width:80%;
+        }
+      }
+    }
+  }
+#boton{
+  background-color:$first-colorD;
+  width:100px;
+  height: 50px;
+  color: $white;
+  font-family: Open Sans;
+  cursor:pointer;
+  font-weight: $light;
+  font-size: 1em;
+  }
+/*areas de accion*/
+.icon-animation{
+  transition: all 200ms ease-in-out;
+  &:hover{
+  transition: all 200ms ease-in-out;
+  border-radius: 2em;
+  background-color: $first-colorD;
+  }
+}
+.privacidad__content{
+  justify-content: center;
+}
+.imgcenter{
+    text-align: center;
+  }

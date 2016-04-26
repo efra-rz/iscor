@@ -1,0 +1,127 @@
+/*Banner*/
+#nosotros-banner img, #areas-accion__banner img{
+  margin-top: 30px;
+  }
+.nosotros-banner-top, .areas-accion__banner-top,{
+  width: 100%;
+  height: 1.7em;
+  background-color: $sec-color;
+  margin-top: .5em;
+  }
+.nosotros-banner, .areas-accion__banner{
+  margin-bottom: 2em;
+  background: url("../img/gallery/nosotros-background.png");
+  background-position:50% 120%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include from(web){
+    margin-bottom: 4em;
+    }
+  }
+/*Header y estilos generales*/
+.nosotros-mvv{
+  margin-top: 2em;
+  margin-bottom: 5em;
+  img{
+    width:60%;
+    }
+  h2{
+    @include from(tablet){
+      text-align: center;
+      margin-top:2em;
+      }
+    }
+  }
+.nosotros-objetivo{
+  margin-top: 5em;
+  }
+
+.nosotros-header,.nosotros-objetivo, .nosotros-mvv, .areas-accion__header, .areas-accion__servicios, .productos__header, .contacto__header, .privacidad__content,.contacto2__header{
+  h1{
+    font-size: 2.5em;
+    color:$first-colorD;
+    font-weight: $light;
+    line-height: .8;
+    letter-spacing:-2px;
+    @include from(web){
+      letter-spacing:-3px;
+      font-size: 3.5em;
+      }
+    }
+  h2{
+    letter-spacing:-1px;
+    font-weight: $light;
+    color:$first-colorD;
+    text-transform: uppercase;
+    }
+  h3{
+    font-weight: $light;
+    color:$first-colorD;
+    }
+  h4{
+    color:$first-colorD;
+    }
+  p, ul{
+    color:$grey;
+    }
+  }
+.areas-accion__header{
+  text-align: center;
+  .aa-title{
+    font-size: .9em;
+    }
+  .aa-subtitle{
+    font-size: .9em;
+    }
+
+  h2{
+    text-transform: inherit;
+    }
+  img{
+    width:60%;
+    @include from(tablet){
+      width:50%;
+      }
+    }
+  }
+.productos__header{
+  h1, p{ text-align: center;}
+  p{ font-size: 2em;}
+  }
+.contacto__header,.contacto2__header{
+  h1, p{ text-align: center;}
+  p{ font-size: 2em;}
+  }
+.areas-accion__servicios{
+  h1 {text-align: center;}
+  }
+.contacto2__header{
+  a{margin: 0 auto;}
+  .boton__soporte{
+    line-height: 2em;
+    font-size: 1em
+    }
+  }
+.nosotros-header{
+  h1, p{text-align: center;}
+  p{
+    font-size: 1.2em;
+    margin-top: 3em;
+    }
+  }
+/*Objetivo*/
+.nosotros-objetivo{
+  img{
+    width:100%;
+    @include from(tablet){
+      width:450px;
+      }
+    }
+  }
+/*privacidad__content*/
+.privacidad__content{
+  h1{
+    text-align: center;
+    margin-bottom: 1.5em;
+    }
+  }

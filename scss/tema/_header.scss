@@ -1,0 +1,42 @@
+.home__header--main{
+  padding:4em 0 6em;
+  background-color: $back-grey;
+  }
+.header__home--title{
+  text-align: center;
+  color:$first-color;
+  }
+.header__home--description{
+  font-size: 1.5em;
+  color:$grey;
+  text-align: center;
+  }
+
+
+.logo--movil, .logo--web{
+  text-align: center;
+  margin:.5em;
+  img{
+    width: 80%;
+    @include desde(movil){
+      width:50%;
+      }
+    @include desde(web){
+      width:80%;
+      }
+    @include desde(hd){
+      width:100%;
+      }
+    }
+  }
+.logo--movil{
+  @include desde(web){
+    display: none;
+    }
+  }
+.logo--web{
+  display: none;
+  @include desde(web){
+    display: block;
+    }
+  }

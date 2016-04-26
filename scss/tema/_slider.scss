@@ -1,0 +1,35 @@
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.banner--img,.banner--img1,.banner--img2{
+  background:url("../img/headers/01.png") center center;
+  width:100%;
+  height: 600px;
+  background-size: cover;
+  @include desde(web){
+    height:  400px;
+    }
+  @include desde(hd){
+    height:  600px;
+    }
+  .textbox{
+    color:#fff;
+    font-weight: $light;
+    font-size: 2em;
+    text-align: center;
+    padding: 1em;
+    margin-top: 150px;
+    background-color: rgba($first-colorD, .6);
+    @include desde(web){
+      margin-top: 0;
+      }
+    }
+  }
+.banner--img1{
+  background:url("../img/headers/02.png") center center;
+ }
+.banner--img2{
+  background:url("../img/headers/03.png") center center;
+ }

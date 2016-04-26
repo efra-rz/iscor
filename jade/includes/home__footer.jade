@@ -1,0 +1,44 @@
+.footer
+  .ed-container
+    // Footer1
+    .ed-item.tablet-25.footer--container
+      h3.footer__title Soporte
+      p.footer__description Si necesita apoyo o soporte técnico y Ud. ya es cliente actualmente o cuenta con una póliza de soporte con nosotros, por favor registrese y levante un caso mediante nuestro <a href="http://soporte.iscor.com.mx/Main/Default.aspx" target="blank">Portal de Soporte.</a>
+    // Footer2
+    .ed-item.tablet-25.footer--container
+      h3.footer__title Dirección
+      p.footer__description Plaza Vía
+        <br> Ave Constituyentes de N.L. 1201-22 
+        <br> Col. Linda Vista
+        <br> Nuevo León
+        <br> C.P.67130
+        <br> México
+      p.footer__description P: +52(81)83555-555
+        <br> F: +52(81)83555-555
+        <br> E-mail: <a href="#">ventas@iscor.com.mx</a>
+    // Footer3
+    .ed-item.tablet-25.footer--container
+      h3.footer__title Facebook
+      <div class="fb-page" data-href="https://www.facebook.com/iscor" data-tabs="timeline" data-height="350" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/iscor"><a href="https://www.facebook.com/iscor">Iscor</a></blockquote></div></div>
+    //Footer4
+    .ed-item.tablet-25.footer--container
+      h3.footer__title Contacto
+
+      form.footer__form(action="sendbymail_iscor.php" method="post")
+        ul
+          li Nombre
+          li: input(type="text" name="nombre" placeholder="Ingrese su Nombre" required)
+          li Correo
+          li: input(type="text" name="correo" placeholder="Ingrese su E-mail" required)
+          li Mensaje
+          li:  textarea(rows="6"  name="mensaje" placeholder="Porque nos interesa su opinión, escriba su mensaje." required)
+          li: input.boton__soporte(type="submit" value="Enviar" id="boton")
+.footercredit
+  .ed-container
+    //.ed-item.tablet-50.tablet-main-start
+      //.credits
+        //| Diseño por 
+        //a(href="http://morraldeyute.com") Morral de Yute
+    .ed-item.tablet-main-end
+      .credits
+        a(href="privacidad.html") Aviso de Privacidad

@@ -1,0 +1,14 @@
+extends templates/home
+
+block title
+  title  Nosotros - Iscor
+block menu-nosotros
+  li: a.active(href="nosotros.html") Nosotros
+block content
+  section#nosotros-banner
+    include includes/nosotros-banner
+  header(role="main")#nosotros-header
+    include includes/nosotros-header
+  section#nosotros-valores
+    include includes/nosotros-valores
+  

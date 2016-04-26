@@ -1,0 +1,49 @@
+.footer{
+  background-color: $first-color;
+  padding: 3.5em 0 6em;
+  &__title, {
+    color:$white;
+    }
+  &__description{
+    color:darken($first-colorD, 5);
+    a{
+      color:lighten($sec-color, 30);
+      &:hover{
+        color:$white;
+        }
+      }
+    }
+  &__form{
+    ul{
+      list-style-type: none;
+      padding-left: 0;
+      color:$white;
+      li{
+        display: block;
+        input{
+          width:100%;
+          height: 2em;
+          }
+        textarea{
+          width:100%;
+          }
+        }
+      }
+    }
+  }
+
+.footercredit{
+  background-color: $sec-color;
+  padding-bottom: 1.5em;
+  }
+.credits{
+  text-align: center;
+  margin:1em;
+  color:$white;
+  a{
+    color:$first-colorD;
+    &:hover{
+      color:$white;
+      }
+    }
+  }

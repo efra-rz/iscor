@@ -1,0 +1,18 @@
+.contacto__form-and-map.mt5.mb5
+  .ed-container
+    .ed-item.tablet-50
+      form.contacto__forma(action="sendbymail_iscor.php" method="post")
+        h3.fnm-title ¡Contáctanos!
+        ul.fnm-list
+          li Nombre
+          li: input(type="text" name="nombre" placeholder="Ingrese su Nombre" required)
+          li Correo
+          li: input(type="text" name="correo" placeholder="Ingrese su E-mail" required)
+          li Mensaje
+          li:  textarea(rows="6"  name="mensaje" placeholder="Porque nos interesa su opinión, escriba su mensaje." required)
+          li: input.fnm-send(type="submit" value="Enviar" id="boton")
+    .ed-item.tablet-50
+      h3.fnm-title Oficina Monterrey:
+        .ed-video
+          iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.2423697898944!2d-100.2630970678966!3d25.695362539976088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662954cbda83e97%3A0x8640d9e274a1b032!2sIscor+Soluciones%2C+S.A.+De+C.V.!5e0!3m2!1ses-419!2smx!4v1454534669222" width="300" height="200" frameborder="0" style="border:0" allowfullscreen)
+      p.direccion__visitanos  Plaza Vía, Ave Constituyentes de N.L. 1201-22, C.P.67130 Col. Linda Vista Nuevo León, México

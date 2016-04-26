@@ -1,0 +1,31 @@
+.home__areas-accion{
+  margin:5em 0;
+  text-align: center;
+  }
+.aa-container{
+  margin: 1.5em 0;
+  }
+.aa-title, .aa-subtitle, .aa-description{
+  color:$first-colorD;
+  }
+
+.aa-main-title{
+  color:$first-color;
+  text-transform: uppercase;
+  text-align: center;
+  }
+.aa-description{
+  font-size: 14px;
+  }
+.home__areas-accion img{
+  width:40%;
+  }
+.aa-img{
+  padding:10px;
+}
+
+a:hover{
+  .aa-title, .aa-subtitle, .aa-description{
+    color:$first-color;
+    }
+  }

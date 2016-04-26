@@ -1,0 +1,72 @@
+.menu{
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: none;
+
+  li{
+    // border-bottom: 1px solid rgba(#000,.2);
+    &:last-child{
+      border:none;
+      }
+    }
+
+  a{
+    color:$first-color;
+    line-height: 3;
+    text-decoration: none;
+    display: block;
+    font-family: sans-serif;
+    padding-left: 1em;
+    font-weight: bold;
+    font-size: .9em;
+    &.active{
+      color:$first-colorD;
+      }
+    &:hover{
+      background: rgba($first-color,.2);
+      color:$first-color;
+      }
+    }
+  @include desde(movil){
+    display:flex !important;
+    margin:1em 0 auto;
+    li{
+      flex:auto;
+      // border-right: 1px solid rgba(#000,.2);
+      text-align: center;
+      }
+    a{
+      padding-left: 0;
+      line-height: 5;
+      font-weight: normal;
+      }
+    }
+  @include desde(web){
+    display:flex !important;
+    margin:0 auto;
+    li{
+      flex:auto;
+      // border-right: 1px solid rgba(#000,.2);
+      text-align: center;
+      }
+    a{
+      padding: 20px;
+      line-height: 0;
+      font-size: 1em;
+      font-weight: normal;
+      }
+    }
+  }
+#toggle-menu{
+  background: darken($first-color, 5%);
+  color: #fff;
+  line-height: 3;
+  // padding-right: 3em;
+  font-size: .9em;
+  text-align: center;
+  @include desde(movil){
+    display: none;
+    }
+  }

@@ -1,0 +1,23 @@
+
+.barra{
+  width:100%;
+  height: 100px;
+  background-color: red;
+  position:fixed;
+}
+.padding{
+  width:100%;
+  height: 200px;
+}
+.grid-container{
+  @include grid(grid-item,2);
+  @include desde(movil){
+    @include grid(grid-item,3);
+    }
+  @include desde(tablet){
+    @include grid(grid-item,4);
+    }
+  @include desde(web){
+    @include grid(grid-item,6);
+    }
+  }

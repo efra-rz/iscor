@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    block title
+      title ISCOR
+    meta(name="description" content="This is an example of a meta description. This will often show up in search results.") 
+    link(rel="stylesheet", href="css/styles.css")
+    link(rel="stylesheet", href="css/ap-scroll-top.css")
+    link(rel="icon" type="image/png" href="favicon.ico")
+    #fb-root
+    script(src="js/jquery-1.11.3.min.js")
+    script(src="js/facebook.js")
+    script(src="js/zopim.js")
+      
+  body
+    header#topbar
+      include ../includes/topbar
+      include ../includes/logomenu
+    block content
+      section#slider
+        include ../includes/home__slider
+      header(role="main")#header
+        include ../includes/home__header--main
+      //- section#home__banner-mx
+      //-   include ../includes/home__banner-MX
+      section#home__areas-accion
+        include ../includes/home__areas-accion
+      //- section#home__soluciones
+      //-   include ../includes/home__soluciones
+      section#home__form-and-map
+        include ../includes/home__form-and-map  
+      //- section#separator
+      //-   include ../includes/separator
+    footer#home__footer
+      include ../includes/home__footer
+    script(src="js/owl.carousel.js")
+    script(src="js/ap-scroll-top.min.js")
+    script(src="js/jQuery.scrollSpeed.js")
+    script(src="js/scripts.js")
+    

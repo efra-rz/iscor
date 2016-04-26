@@ -1,0 +1,22 @@
+.logomenu
+  .ed-container
+    .ed-item.web-20
+      .logo--movil: a(href="index.html"): img(src="img/logo-iscor--movil.png", alt="")
+      .logo--web: a(href="index.html"): img(src="img/logo-iscor--web.png", alt="")
+    .ed-item.web-80.web-cross-center.web-main-end
+      block menu
+        nav
+          #toggle-menu Menu
+          ul.menu
+            block menu-inicio
+              li: a(href="index.html") Inicio
+            block menu-nosotros
+              li: a(href="nosotros.html") Nosotros
+            block menu-servicios
+              li: a(href="servicios.html") Áreas de Acción
+            block menu-productos
+              li: a(href="productos.html") Productos
+            block menu-soporte
+              li: a(href="soporte.html") Soporte
+            block menu-contacto
+              li: a(href="contacto.html") Contacto
