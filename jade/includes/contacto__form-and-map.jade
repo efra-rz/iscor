@@ -6,20 +6,20 @@
         |                     
         ul.fnm-list
           li Nombre
-          |                       
           li
             input(name='nombre', placeholder='Ingrese su Nombre', required='required', type='text')
-          |                       
+          li Compañía
+          li
+            input(name='compania', placeholder='Compañía', required='required', type='text')
+          li Puesto
+          li
+            input(name='puesto', placeholder='Puesto', required='required', type='text')         
           li Correo
-          |                       
           li
             input(name='correo', placeholder='Ingrese su E-mail', required='required', type='text')
-          |                       
           li Mensaje
-          |                       
           li
             textarea(rows='6', name='mensaje', placeholder='Porque nos interesa su opinión, escriba su mensaje.', required='required')
-          |                       
           li
             input#boton.fnm-send(value='Enviar', type='submit')
     |       &#x9;&#x9;&#x9;

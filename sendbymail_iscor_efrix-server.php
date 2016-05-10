@@ -9,8 +9,10 @@ $email_bcc = "info@efrix.net,"; //Direcciones copias ocultas
 // Variables del mensaje
 $nombre = $_POST['nombre'];
 $correo =  $_POST['correo'];
+$correo =  $_POST['compania'];
+$correo =  $_POST['puesto'];
 $mensaje =  $_POST['mensaje'];
-$contenido= "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nMensaje: " . $mensaje;
+$contenido= "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nCompañía: " . $compania . "\nPuesto: " . $puesto . "\nMensaje: " . $mensaje;
 
 $headers =
 'From: '.$email_from."\r\n".
@@ -20,6 +22,6 @@ $headers =
 
 @mail($email_to, $email_subject, $contenido, $headers);
 
-header("Location:http://google.com");
+header("Location:http://iscor.com.mx/forma-enviada.html");
 
 ?>
